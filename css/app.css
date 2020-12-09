@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "coolvetica";
+    src: url('fonts/coolvetica\ rg.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "larke";
+    src: url('fonts/Larke\ Neue\ Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "kurri";
+    src: url('fonts/KurriIslandCapsItaPERSONAL-Md.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+    grid-column: 1/4;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    grid-column: 1/4;
+    background-color: rgb(95, 7, 98);
+    margin-top: -10px;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav h3 {
+    color: #ffffff;
+    font-family: "coolvetica";
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+nav input[type="text"] {
+    width: 200px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "larke";
+}
+
+nav input[type="submit"] {
+    padding: 6px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c7163c;
+    color: #ffffff;
+    font-family: "larke";
+    transition: all 300ms;
+}
+
+nav input[type="submit"]:hover {
+    background-color: #c73958;
+    width: 62px;
+    height: 30px;
+}
+
+.resul {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #dbdbdb;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.nombre {
+    width: 100%;
+    margin: 25px 15px 10px 25px;
+}
+
+.nombre h2 {
+    font-family: "kurri";
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.imagen {
+    width: 30%;
+    height: 15%;
+    margin: 10px 30px 10px 30px;
+    /*background-color: #a10d2d;*/
+}
+
+.imagen img {
+    width: 90%;
+    border: 4px solid #000000;
+    background-color: #9ea10d;
+}
+
+.biografia {
+    margin: 10px 30px 10px 30px;
+    background-color: #a10d2d;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.biografia h2 {
+    color: #ffffff;
+    font-family: "larke";
+    text-transform: uppercase;
+}
+
+.biografia td {
+    height: 30px;
+    padding: 1px;
+    font-family: "larke";
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.poderes {
+    width: 200px;
+    height: 300px;
+    margin: 12px 30px 10px 30px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #000000;
+    background-color: #a10d2d;
+}
+
+.poderes h2 {
+    color: #ffffff;
+    font-family: "larke";
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.poderes table {
+    margin-left: 5px;
+}
+
+.poderes td {
+    height: 30px;
+    padding: 1px;
+    font-family: "larke";
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.alias {
+    width: 34%;
+    height: 100px;
+    background-color: rgb(206, 125, 5);
+    margin: 10px 5px 15px 12px;
+    border-radius: 5px;
+    padding: 5px 10px 22px 10px;
+    border: 2px solid #000000;
+}
+
+.afilacion {
+    background-color: rgb(206, 125, 5);
+    width: 30%;
+    height: 100px;
+    margin: 10px 0px 15px 5px;
+    border-radius: 5px;
+    padding: 5px 10px 22px 10px;
+    border: 2px solid #000000;
+}
+
+.ocupacion {
+    width: 27%;
+    height: 100px;
+    margin: 10px 0px 15px 10px;
+    background-color: rgb(206, 125, 5);
+    border-radius: 5px;
+    padding: 5px 10px 22px 10px;
+    border: 2px solid #000000;
+}
+
+.alias h4,
+.afilacion h4,
+.ocupacion h4 {
+    font-family: "larke";
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.alias p,
+.afilacion p,
+.ocupacion p {
+    font-family: "larke";
+    font-size: 14px;
+    color: #ffffff;
+}
